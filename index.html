@@ -12,32 +12,38 @@
       city: prompt("В якому місті ти живеш?"),
       sport: prompt("Який твій улюблений вид спорту?"),}
       
-      alert("Тобі " + (2023-user.year) + " років" + '\n' + 
+      alert(year_func (user) + '\n' + 
       city_func (user) + '\n' + sport_func (user))
+
+      function year_func (user) {
+      if (user.year === null || user.year == "" ) 
+      {return "Шкода, що Ви не захотіли ввести свій рік народження";}
+      else 
+      {return ("Тобі " + (2023-user.year) + " років");}}
 
       function city_func (user) {
       if (user.city === "Київ") 
       {return "Ти живеш у столиці України";} 
       else if (user.city === "Вашингтон") 
-      {return"Ти живеш у столиці США";}
+      {return "Ти живеш у столиці США";}
       else if (user.city === "Лондон") 
-      {return"Ти живеш у столиці Великої Британії";}
+      {return "Ти живеш у столиці Великої Британії";}
       else if (user.city === null || user.city == "") 
-      {return"Шкода, що Ви не захотіли ввести своє місто";}
+      {return "Шкода, що Ви не захотіли ввести своє місто";}
       else 
-      {return"Ти живеш у місті " + user.city;}}
+      {return "Ти живеш у місті " + user.city;}}
 
       function sport_func (user) {
       if (user.sport === "бокс") 
-      {return"Круто! Хочеш стати Олександром Усиком?";} 
+      {return "Круто! Хочеш стати Олександром Усиком?";} 
       else if (user.sport === "фехтування") 
-      {return"Круто! Хочеш стати Ольгою Харлан?";}
+      {return "Круто! Хочеш стати Ольгою Харлан?";}
       else if (user.sport === "греко-римська боротьба") 
-      {return"Круто! Хочеш стати Жаном Беленюком?";}
+      {return "Круто! Хочеш стати Жаном Беленюком?";}
       else if (user.sport === null || user.city == "") 
-      {return"Шкода, що Ви не захотіли ввести свій улюблений вид спорту";}
+      {return "Шкода, що Ви не захотіли ввести свій улюблений вид спорту";}
       else 
-      {return"Твій улюблений спорт - " + user.sport;}}
+      {return "Твій улюблений спорт - " + user.sport;}}
 
     </script>
 </body>
