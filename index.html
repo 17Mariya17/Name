@@ -12,25 +12,28 @@
       city: prompt("В якому місті ти живеш?"),
       sport: prompt("Який твій улюблений вид спорту?"),}
       
-      alert("Тобі " + (2013-user.year) + " років")
+      alert("Тобі " + (2023-user.year) + " років" + '\n' + 
+      city_func (user) + '\n' + sport_func (user))
 
+      function city_func (user) {
       if (user.city === "Київ") 
-      {alert("Ти живеш у столиці України");} 
+      {return "Ти живеш у столиці України";} 
       else if (user.city === "Вашингтон") 
-      {alert("Ти живеш у столиці США");}
+      {return"Ти живеш у столиці США";}
       else if (user.city === "Лондон") 
-      {alert("Ти живеш у столиці Великої Британії");}
+      {return"Ти живеш у столиці Великої Британії";}
       else 
-      {alert("Ти живеш у місті " + user.city);}
+      {return"Ти живеш у місті " + user.city;}}
 
+      function sport_func (user) {
       if (user.sport === "бокс") 
-      {alert("Круто! Хочеш стати Олександром Усиком?");} 
+      {return"Круто! Хочеш стати Олександром Усиком?";} 
       else if (user.sport === "фехтування") 
-      {alert("Круто! Хочеш стати Ольгою Харлан?");}
+      {return"Круто! Хочеш стати Ольгою Харлан?";}
       else if (user.sport === "греко-римська боротьба") 
-      {alert("Круто! Хочеш стати Жаном Беленюком?");}
+      {return"Круто! Хочеш стати Жаном Беленюком?";}
       else 
-      {alert("Твій улюблений спорт - " + user.sport);}
+      {return"Твій улюблений спорт - " + user.sport;}}
 
     </script>
 </body>
